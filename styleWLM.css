@@ -11,13 +11,29 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
 
 */
 
-/*@import;*/
-/*@import url(....css) screen and (max-width:600px);*/
+/* ==> -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- IMPORT ==> */
+    /* IMPORTANT : Les @import doivent etre en debut de page */
+
+    /* ==> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- IMPORT CONDITIONES ==> */
+        /* EXEMPLE : @import style.css;*/
+
+    /* <== ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== IMPORT CONDITIONES */
+
+    /* ==> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ IMPORT NON CONDITIONES ==> */
+        /* EXEMPLE : @import url(style.css) screen and (max-width:600px);*/
+
+    /* <== ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ <== IMPORT NON CONDITIONES */
+
+
+/* <== -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== IMPORT */
+
+
+/* ==> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- VARIABLES ==> */
 
 :root{
-    --couleurPrincipale_fonce:#6d8e59;
-    --couleurPrincipale_moyen:#9bb78c;
-    --couleurPrincipale_clair:#c8e0bf;
+    --couleurPrincipale_fonce:#05837d;
+    --couleurPrincipale_moyen:#007c7d;/* */
+    --couleurPrincipale_clair:#43beae;
 
     --couleurSecondaire_fonce:#7d4e92;
     --couleurSecondaire_moyen:#a987ba;
@@ -53,55 +69,24 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
 
 }
 
-/** TOUTES LES INSTRUCTIONS SERONT CATEGORISES SELON LE MODELE QUI SUIT : 
+/* <== ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== VARIABLES */
+
+/* TOUTES LES INSTRUCTIONS SERONT CATEGORISES SELON LE MODELE QUI SUIT : 
     ...{
-        Z-INDEX 
-        POSITION / AFFCHAGE 
-        TAILLE 
-        MARGIN / PADDING 
-        ARRIERE PLAN 
-        BORDURE 
-        POLICE / CONTENU 
-        ANIMATIONS / EFFETS 
-        AUTRES 
-    }
-*/
+        /*Z-INDEX*/ 
+        /*POSITION / AFFCHAGE*/ 
+        /*TAILLE*/ 
+        /*MARGIN / PADDING*/ 
+        /*ARRIERE PLAN*/ 
+        /*BORDURE*/ 
+        /*POLICE / CONTENU*/ 
+        /*ANIMATIONS / EFFETS*/ 
+        /*AUTRES*/ 
+    /*}*/
 
+/* ==> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- INSTRUCTIONS GENERALES ==> */
 
-@media screen and (max-width: 576px){/* Ecran de smartphone (portrait) */
-    
-}
-
-@media screen and (min-width: 576px){/* Ecran de smartphone (paysage) */
-    
-}
-
-@media screen and (min-width: 768px){/* Ecran de tablette (portrait) */
-    
-}
-
-@media screen and (min-width: 992px){/* Ecran de tablette (paysage) */
-    
-}
-
-@media screen and (min-width: 1200px){/* Ecran d'ordinateur portable */
-    
-}
-
-@media screen and (min-width: 1400px){/* Ecran d'ordinateur "classique" */
-    
-}
-
-@media screen and (min-width: 2600px){/* grand écran d'ordinateur */
-    
-}
-
-@media screen and (min-width: 3600px){/* Ecran de TV */
-    
-}
-
-
-/* PARTIE XX ==> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ INSTRUCTIONS GENERALES ==> */
+    /* ==> Les regles de cette parties sont appliqués sur toute la page */
 
     *{
         /* Z-INDEX */
@@ -145,15 +130,21 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
         /* AUTRES */
     }
 
-/* <== PARTIE XX ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ <== INSTRUCTIONS GENERALES */
+/* <== ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== INSTRUCTIONS GENERALES */
 
-/* PARTIE __ ==> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ==> INSTRUCTIONS MULTIPLES ZONES*/
+/*  ==> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ==> INSTRUCTIONS MULTIPLES ZONES*/
 
-/* <== PARTIE __ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ <== INSTRUCTIONS MULTIPLES ZONES */
+    /* ==> Les regles de cette parties sont appliqués sur différentes (mais pas toutes) parties de la page */
 
+/* <== ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== INSTRUCTIONS MULTIPLES ZONES */
 
+/* *********************************************************************************************************************************************************************************************************************** */
+/* *********************************************************************************************************************************************************************************************************************** */
 
 /* PARTIE 00 ==> -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ==> INSTRUCTIONS HORS FLUX */
+
+    /* Les instructions de cette partie ne sont à appliquer que pour les balise qui ne sont ni dans le <header>, ni dans le <main>, ni dans le <footer> */
+
     #modal{
         /* Z-INDEX */
         /* POSITION / AFFCHAGE */
@@ -170,23 +161,41 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
         /* ANIMATIONS / EFFETS */
             transform: translateX(-50%) translateY(-50%);
         /* AUTRES */
-
-    
-
     } 
 
     #modal:not(.ouvert){
-        opacity: 0;
-        cursor: pointer;
+        /* Z-INDEX */
+        /* POSITION / AFFCHAGE */
+            opacity: 0;
+        /* TAILLE */
+        /* MARGIN / PADDING */
+        /* ARRIERE PLAN */
+        /* BORDURE */
+        /* POLICE / CONTENU */
+        /* ANIMATIONS / EFFETS */
+        /* AUTRES */
+            cursor: pointer;
     }
+
     #modal.ouvert{
-        opacity: 1;
-        cursor: auto;
+        /* Z-INDEX */
+        /* POSITION / AFFCHAGE */
+            opacity: 1;
+        /* TAILLE */
+        /* MARGIN / PADDING */
+        /* ARRIERE PLAN */
+        /* BORDURE */
+        /* POLICE / CONTENU */
+        /* ANIMATIONS / EFFETS */
+        /* AUTRES */
+            cursor: auto;
     }
 
 /* <== PARTIE 00 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ <== INSTRUCTIONS HORS FLUX */
 
 /* PARTIE 01 ==> --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- EN-TETE ==> */
+
+    /* Les instructions de cette partie ne sont à appliquer que pour les balise qui sont dans le <header> uniquement */
 
     header{
         /* Z-INDEX */
@@ -203,6 +212,8 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
 /* <== PARTIE 01 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== EN-TETE */
 
 /* Partie 02 ==> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- CORP DE PAGE ==> */
+
+    /* Les instructions de cette partie ne sont à appliquer que pour les balise qui sont dans le <main> uniquement */
 
     main{
         /* Z-INDEX */
@@ -271,6 +282,9 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
 /* <== Partie 02 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== CORP DE PAGE */
 
 /* Partie 03 ==> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- PIED DE PAGE ==> */
+
+    /* Les instructions de cette partie ne sont à appliquer que pour les balise qui sont dans le <footer> uniquement */
+
     footer{
         /* Z-INDEX */
         /* POSITION / AFFCHAGE */
@@ -287,6 +301,7 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
         /* ANIMATIONS / EFFETS */
         /* AUTRES */
     }
+
     .P3-1_elementBarreDeTache.menuDemarer{
         /* Z-INDEX */
         /* POSITION / AFFCHAGE */
@@ -346,28 +361,27 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
         /* ANIMATIONS / EFFETS */
         /* AUTRES */
     }
+
 /* <== Partie 03 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== PIED DE PAGE */
 
-/* Partie 99 ==> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ANIMATIONS ==> */
+.P0_modalPourApplication {
 
-/* <== Partie 99 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ <== ANIMATIONS */
-.window {
     box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf, inset -2px -2px #808080,inset 2px 2px #ffffff;
     background: #c0c0c0;
     padding: 3px;
 }
-.window[role=tabpanel] {
+.P0_modalPourApplication[role=tabpanel] {
     position: relative;
     z-index: 2;
 }
 
-.title-bar,
+.P0-1_EnTeteModal1,
 li[role=tab] {
     -webkit-font-smoothing: none;
     font-size: 11px;
 }
 
-.title-bar {
+.P0-1_EnTeteModal1 {
     background: linear-gradient(
         90deg,
         #000080,
@@ -379,11 +393,11 @@ li[role=tab] {
     align-items: center;height: 30px;
 }
 
-.title-bar.inactive {
+.P0-1_EnTeteModal1.inactive {
     background: linear-gradient(90deg,#808080,#b5b5b5);
 }
 
-.title-bar-text {
+.P0-1-1_enTeteFenetre {
     font-weight: bold;
     color: white;
     letter-spacing: 0;
@@ -391,7 +405,68 @@ li[role=tab] {
 }
 
 
-#corpModal{
+#P0-2_contenuModal1{
 width: calc(100% - 6px);
   height: calc(100% - 41px);
 }
+
+
+
+
+
+
+
+
+
+/* *********************************************************************************************************************************************************************************************************************** */
+/* *********************************************************************************************************************************************************************************************************************** */
+
+/* ==> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ANIMATIONS ==> */
+
+    /* Les instructions de cette partie regrouppent toutes les animations quelque soit la partie où elles seront appliqué */
+
+/* <== ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== ANIMATIONS */
+
+/* ==> -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- MEDIA QUERRY ==> */
+
+    /* Les instructions de cette partie servent à gerer la partie responsive */
+
+    @media screen and (max-width: 576px){/* Ecran de smartphone (portrait) */
+            
+    }
+
+    @media screen and (min-width: 576px){/* Ecran de smartphone (paysage) */
+        
+    }
+
+    @media screen and (min-width: 768px){/* Ecran de tablette (portrait) */
+        
+    }
+
+    @media screen and (min-width: 992px){/* Ecran de tablette (paysage) */
+        
+    }
+
+    @media screen and (min-width: 1200px){/* Ecran d'ordinateur portable */
+        
+    }
+
+    @media screen and (min-width: 1400px){/* Ecran d'ordinateur "classique" */
+        
+    }
+
+    @media screen and (min-width: 2600px){/* grand écran d'ordinateur */
+        
+    }
+
+    @media screen and (min-width: 3600px){/* Ecran de TV */
+        
+    }
+
+    /* ==> ********** AUTRES MEDIAS QUERRYS ********** ==> */
+
+
+
+    /* <== ********** AUTRES MEDIAS QUERRYS ********** <== */
+
+/* <== -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== MEDIA QUERRY */
