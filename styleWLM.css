@@ -145,7 +145,7 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
 
     /* Les instructions de cette partie ne sont à appliquer que pour les balise qui ne sont ni dans le <header>, ni dans le <main>, ni dans le <footer> */
 
-    #modal{
+    .P0_modalPourApplications{
         /* Z-INDEX */
         /* POSITION / AFFCHAGE */
             position: absolute; 
@@ -163,7 +163,7 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
         /* AUTRES */
     } 
 
-    #modal:not(.ouvert){
+    .P0_modalPourApplications:not(.ouvert){
         /* Z-INDEX */
         /* POSITION / AFFCHAGE */
             opacity: 0;
@@ -177,7 +177,7 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
             cursor: pointer;
     }
 
-    #modal.ouvert{
+    .P0_modalPourApplications.ouvert{
         /* Z-INDEX */
         /* POSITION / AFFCHAGE */
             opacity: 1;
@@ -189,6 +189,52 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
         /* ANIMATIONS / EFFETS */
         /* AUTRES */
             cursor: auto;
+    }
+
+    .P0_modalPourApplication {
+
+        box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf, inset -2px -2px #808080,inset 2px 2px #ffffff;
+        background: #c0c0c0;
+        padding: 3px;
+    }
+
+    .P0_modalPourApplication[role=tabpanel] {
+        position: relative;
+        z-index: 2;
+    }
+
+    .P0-1_EnTeteModal1,
+    li[role=tab] {
+        -webkit-font-smoothing: none;
+        font-size: 11px;
+    }
+
+    .P0-1_EnTeteModal1 {
+        background: linear-gradient(
+            90deg,
+            #000080,
+            #1084d0
+        );
+        padding: 3px 2px 3px 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;height: 30px;
+    }
+
+    .P0-1_EnTeteModal1.inactive {
+        background: linear-gradient(90deg,#808080,#b5b5b5);
+    }
+
+    .P0-1-1_enTeteFenetre {
+        font-weight: bold;
+        color: white;
+        letter-spacing: 0;
+        margin-right: 24px;
+    }
+
+    #P0-2_contenuModal1{
+    width: calc(100% - 6px);
+    height: calc(100% - 41px);
     }
 
 /* <== PARTIE 00 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ <== INSTRUCTIONS HORS FLUX */
@@ -363,60 +409,6 @@ LISTE DES FICHIERS (ETRE LE PLUS PRECIS POSSIBLE) UTILISANT CETTE FEUILLE DE STY
     }
 
 /* <== Partie 03 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- <== PIED DE PAGE */
-
-.P0_modalPourApplication {
-
-    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf, inset -2px -2px #808080,inset 2px 2px #ffffff;
-    background: #c0c0c0;
-    padding: 3px;
-}
-.P0_modalPourApplication[role=tabpanel] {
-    position: relative;
-    z-index: 2;
-}
-
-.P0-1_EnTeteModal1,
-li[role=tab] {
-    -webkit-font-smoothing: none;
-    font-size: 11px;
-}
-
-.P0-1_EnTeteModal1 {
-    background: linear-gradient(
-        90deg,
-        #000080,
-        #1084d0
-    );
-    padding: 3px 2px 3px 3px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;height: 30px;
-}
-
-.P0-1_EnTeteModal1.inactive {
-    background: linear-gradient(90deg,#808080,#b5b5b5);
-}
-
-.P0-1-1_enTeteFenetre {
-    font-weight: bold;
-    color: white;
-    letter-spacing: 0;
-    margin-right: 24px;
-}
-
-
-#P0-2_contenuModal1{
-width: calc(100% - 6px);
-  height: calc(100% - 41px);
-}
-
-
-
-
-
-
-
-
 
 /* *********************************************************************************************************************************************************************************************************************** */
 /* *********************************************************************************************************************************************************************************************************************** */
