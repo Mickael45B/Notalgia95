@@ -1,0 +1,570 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #008080;
+	display: block !important;
+}
+
+
+
+.window {
+	margin: 20px auto;
+	width: 671px;
+	color: #000;
+	font-family: 'Arial',sans-serif;
+	background: #c0c0c0;
+	border: 1px solid;
+	border-top-color: #dfdfdf;
+	border-left-color: #dfdfdf;
+	border-right-color: #000;
+	border-bottom-color: #000;
+}
+
+.window__inner {
+	border: 1px solid;
+	border-top-color: #fff;
+	border-left-color: #fff;
+	border-right-color: #808080;
+	border-bottom-color: #808080;
+}
+
+.window__heading {
+	margin: 2px 2px 0;
+	padding: 1px 2px;
+	color: #fff;
+	background: linear-gradient(to right, #000080, #1084d0);
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.window__heading-icon {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAFVBMVEUAAAAAAAD///+AgIDAwMCAAAAAAIAAY5KrAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfhDAoMHRkpnFJaAAAAgElEQVQoz2NgwAoEIQDOZ1SCAAG4gDEEGMKViLiAgSOaESaOaEYIIwSCgFxVJAHVUKBAaBCmgCCaFkFjAbglTkpAQhhqDaOIi6OLEtApii4QFSIigoIijkCsDDWDUUQsLVEsLU1EGeZ0oAAIjBQBSLSIKMOiEhpvLopoEScIVgAAic47kFb3MSkAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMTItMTBUMTI6Mjk6MjUtMDU6MDAhZWq4AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTEyLTEwVDEyOjI5OjI1LTA1OjAwUDjSBAAAAABJRU5ErkJggg==");
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	margin-right: 4px;
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+
+.window__actions {
+	padding: 4px 8px;
+	font-size: 11px;
+}
+
+.window__content {
+	margin: 0 2px 2px 2px;
+	border: 1px solid;
+	border-top-color: #808080;
+	border-left-color: #808080;
+	border-bottom-color: #fff;
+	border-right-color: #fff;
+	font-size: 13px;
+}
+
+.window__content-inner {
+	background: #fff;
+	border: 1px solid;
+	border-top-color: #000;
+	border-left-color: #000;
+	border-bottom-color: #dfdfdf;
+	border-right-color: #dfdfdf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.solitaire {
+	width: 660px;
+	background-color: green;
+	height: 440px;
+	position: relative;
+}
+
+.card {
+	width: 71px;
+	height: 96px;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: 1px solid #000;
+	border-radius: 4px;
+	user-select: none;
+	margin: -1px;
+	box-shadow: 1px -1px 0px #000;
+}
+
+.card--h-1 {
+    background-image: url('./coeur/asCoeur.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-2 {
+    background-image: url('./coeur/coeur2.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-3 {
+    background-image: url('./coeur/coeur3.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-4 {
+    background-image: url('./coeur/coeur4.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-5 {
+    background-image: url('./coeur/coeur5.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-6 {
+    background-image: url('./coeur/coeur6.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-7 {
+    background-image: url('./coeur/coeur7.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-8 {
+    background-image: url('./coeur/coeur8.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-9 {
+    background-image: url('./coeur/coeur9.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-10 {
+    background-image: url('./coeur/coeur10.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-11 {
+    background-image: url('./coeur/coeurJ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-12 {
+    background-image: url('./coeur/coeurQ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--h-13 {/* heart = coeur */
+    background-image: url('./coeur/coeurK.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-1 {
+    background-image: url('./trefle/asTrefle.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-2 {
+    background-image: url('./trefle/trefle2.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-3 {
+    background-image: url('./trefle/trefle3.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-4 { /* club = trefle */
+    background-image: url('./trefle/trefle4.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-5 {
+    background-image: url('./trefle/trefle5.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-6 {
+    background-image: url('./trefle/trefle6.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-7 {
+    background-image: url('./trefle/trefle7.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-8 {
+    background-image: url('./trefle/trefle8.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-9 {
+    background-image: url('./trefle/trefle9.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-10 {
+    background-image: url('./trefle/trefle10.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-11 {
+    background-image: url('./trefle/trefleJ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-12 {
+    background-image: url('./trefle/trefleQ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--c-13 {
+    background-image: url('./trefle/trefleK.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-1 {/* diams = careau */
+    background-image: url('./carreau/asCarreau.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-2 {
+    background-image: url('./carreau/carreau2.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-3 {
+    background-image: url('./carreau/carreau3.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-4 {
+    background-image: url('./carreau/carreau4.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-5 {
+    background-image: url('./carreau/carreau5.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-6 {
+    background-image: url('./carreau/carreau6.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-7 {
+    background-image: url('./carreau/carreau7.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-8 {
+    background-image: url('./carreau/carreau8.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-9 {
+    background-image: url('./carreau/carreau9.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-10 {
+    background-image: url('./carreau/carreau10.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-11 {
+    background-image: url('./carreau/carreauJ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-12 {
+    background-image: url('./carreau/carreauQ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--d-13 {
+    background-image: url('./carreau/carreauK.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-1 {/* spade = pique */
+    background-image: url('./pique/asPique.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-2 {
+    background-image: url('./pique/pique2.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-3 {
+    background-image: url('./pique/pique3.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-4 {
+    background-image: url('./pique/pique4.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-5 {
+    background-image: url('./pique/pique5.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-6 {
+    background-image: url('./pique/pique6.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-7 {
+    background-image: url('./pique/pique7.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-8 {
+    background-image: url('./pique/pique8.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-9 {
+    background-image: url('./pique/pique9.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-10 {
+    background-image: url('./pique/pique10.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-11 {
+    background-image: url('./pique/piqueJ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-12 {
+    background-image: url('./pique/piqueQ.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--s-13 {
+    background-image: url('./pique/piqueK.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.card--back {
+	background-position: 0 0;
+	background-repeat: repeat;
+	background-color: #02027f;
+	background-size: 4px 4px;
+	/* background-image: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 44.9%, white 45%, white 55%, rgba(255, 255, 255, 0) 55.1%, rgba(255, 255, 255, 0)), linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 44.9%, white 45%, white 55%, rgba(255, 255, 255, 0) 55.1%, rgba(255, 255, 255, 0)); */
+    background-image: url(./dosCartes/Num10.png);
+    background-size: cover;
+}
+
+.card--front {
+	cursor: pointer;
+}
+
+.card--moving {
+	position: fixed;
+	z-index: 1;
+}
+
+.deck {
+	width: 250px;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.deck__pile {
+	width: 71px;
+	height: 96px;
+	top: 0;
+	position: absolute;
+	border: 1px dotted;
+	border-radius: 4px;
+	cursor: pointer;
+	background-image: radial-gradient(green 30%, white 30.1%, white 40%, green 40.1%, green 100%);
+	background-size: 90px 90px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.deck__pile .card + .card {
+	margin-top: 4px;
+	margin-left: 2px;
+}
+
+.deck__pile .card + .card + .card {
+	margin-left: 4px;
+	margin-top: 8px;
+}
+
+.deck__deal {
+	left: 95px;
+	top: 0;
+	position: absolute;
+}
+
+.deck__deal .card:last-child {
+	left: 20px;
+}
+
+.deck__deal .card:last-child {
+	left: 20px;
+}
+
+.deck__deal .card:nth-last-child(2) {
+	left: 10px;
+}
+
+.deck__deal .card:first-child {
+	left: 0;
+}
+
+.deck__deal .card:first-child + .card:last-child {
+	left: 10px;
+}
+
+.finish-deck {
+	position: absolute;
+	left: 274px;
+	top: 20px;
+}
+
+.board-deck {
+	position: absolute;
+	top: 150px;
+}
+
+.board-deck .card--front > .card--front {
+	top: 15px;
+}
+
+.board-deck .card--back > .card--front,
+  .board-deck .card--back > .card--back {
+	top: 5px;
+}
+
+/* seven deck */
+.seven {
+	position: relative;
+	float: left;
+	width: 71px;
+	top: 0;
+	margin-left: 20px;
+	height: 96px;
+	border: 1px dotted;
+	border-radius: 4px;
+}
+
+.aces {
+	width: 71px;
+	position: relative;
+	margin-left: 20px;
+	height: 96px;
+	border: 1px dotted;
+	border-radius: 4px;
+	float: left;
+	background-size: 4px 4px;
+	background-image: linear-gradient(45deg, transparent 0%, transparent 44.9%, black 45%, black 55%, transparent 55.1%, transparent), linear-gradient(-45deg, transparent 0%, transparent 44.9%, black 45%, black 55%, transparent 55.1%, transparent);
+}
+
+.new-game {
+	background-color: transparent;
+	border-radius: 0;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+	white-space: nowrap;
+	outline: 0;
+}
+
+.new-game:active {
+	background-color: #999;
+}
+
+.finish-dest {
+	box-shadow: 0 0 0 1px #03ffff;
+}

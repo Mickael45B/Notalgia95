@@ -23,7 +23,8 @@
 
             const appFiles = {
                 Calculatrice: "./applications/calculculatrice/calculculatrice.html",
-                Demineur: "./applications/demineur/demineur.html"
+                demineur: "./applications/demineur/demineur.html",
+                solitaire: "./applications/solitaire/solitaire.html",
                 //...
             };
         
@@ -58,7 +59,6 @@
             });
         
         /* <== SCRIPT 1 -------------------------------------------------------------------------------------------------------------------------------------------------------------- afficher / masquer le modal ==> */
-
 
         /* SCRIPT 2 ==> --------------------------------------------------------------------------------------------------------------------------------------------------  déplacer + agrandir / réduire le modal ==> */
 
